@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'components/custom_bottom_navigation_bar.dart';
 
 void main() {
   runApp(MyApp());
@@ -54,6 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: CustomBottomNavigationBar(),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
