@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-
+import 'package:fs_talker/constants.dart' as styles;
 
 class CustomBottomNavigationBar extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      backgroundColor: Color(0xFFF5F5F5), // TODO: constantsのColorに置き換える
+      backgroundColor: styles.backgroundColor,
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
