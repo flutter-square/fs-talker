@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fs_talker/constants.dart' as styles;
+import 'package:fs_talker/constants.dart';
 
 class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   final String title;
@@ -10,13 +10,15 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      elevation: 0.5,
       title: Text(
         this.title,
         style: TextStyle(
-          color: styles.blackLabelColor
+          color: Styles.blackLabelColor
         ),
       ),
       centerTitle: true,
+      backgroundColor: Styles.backgroundAppBarColor,
     );
   }
 
