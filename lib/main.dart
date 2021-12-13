@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fs_talker/pages/home/home_page.dart';
-import 'components/custom_bottom_navigation_bar.dart';
+import 'package:fs_talker/app.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Home(),
+      home: App(),
     );
   }
 }
