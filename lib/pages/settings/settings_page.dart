@@ -34,11 +34,11 @@ class _SettingsState extends State<Settings> {
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                borderRadius: BorderRadius.all(Radius.circular(Styles.size8)),
               ),
               height: 64,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(Styles.size8),
                 child: Row(
                   children: [
                     Container(
@@ -57,7 +57,7 @@ class _SettingsState extends State<Settings> {
                           )
                       ),
                     ),
-                    SizedBox(width: 8,),
+                    SizedBox(width: Styles.size8,),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -65,7 +65,7 @@ class _SettingsState extends State<Settings> {
                         Text(
                           "Taiyo Ishikawa",
                           style: Styles.profileNameLabelStyle.copyWith(
-                            fontSize: 16
+                            fontSize: Styles.size16
                           ),
                         ),
                         Text(
@@ -80,11 +80,11 @@ class _SettingsState extends State<Settings> {
                 ),
               ),
             ),
-            SizedBox(height: 32,),
+            SizedBox(height: Styles.size32,),
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  borderRadius: BorderRadius.all(Radius.circular(Styles.size8)),
                 ),
                 child: ListView.builder(
                   physics: NeverScrollableScrollPhysics(),
@@ -101,7 +101,7 @@ class _SettingsState extends State<Settings> {
                         ),
                         height: 64,
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(Styles.size8),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -109,7 +109,7 @@ class _SettingsState extends State<Settings> {
                               Icon(
                                 Icons.arrow_forward_ios,
                                 color: Colors.grey,
-                                size: 16,
+                                size: Styles.size16,
                               )
                             ],
                           ),
