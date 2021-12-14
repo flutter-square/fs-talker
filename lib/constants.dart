@@ -18,6 +18,11 @@ class Styles {
       fontWeight: FontWeight.bold
   );
 
+  static const profileNameLabelStyle = TextStyle(
+    color: blackLabelColor,
+    fontWeight: FontWeight.bold
+  );
+
 // App Size
   static const size4 = 4.0;
   static const size8 = 8.0;
