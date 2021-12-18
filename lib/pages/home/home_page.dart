@@ -104,7 +104,7 @@ class _HomeState extends State<Home> {
                 height: Styles.size48,
                 child: ElevatedButton(
                   onPressed: () {
-                    ///遷移処理
+                    Navigator.of(context).pushNamed('/talk');
                   },
                   child: Text(
                     "roomを作成する",
